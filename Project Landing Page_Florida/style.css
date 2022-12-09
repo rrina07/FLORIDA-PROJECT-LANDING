@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .logo {
+    width: 50px;
+    height: 50px;
+} */
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo {
+    width: 80px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px
+}
+nav ul li:hover{
+     transform: skew(-20deg);   
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 130px;
+    color: #fff;
+    font-weight: 00;
+    transition: 0.5ms;
+}
+
+.content h1:hover{
+   -webkit-text-stroke: 2px #fff;
+   color: transparent;
+}
+
+h3 { 
+    color: #fff;
+    font-size: 30px;
+}
+ .content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px; 
+}
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+div.form {
+    position: absolute;
+
+    bottom: 0;
+     /* background: rgb(98,211,213);  */
+    background: linear-gradient(94deg, rgba(98,211,213,1) 0%, rgba(247,208,124,1) 100%); 
+    width: 12cm;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+label{
+    width: 140px;
+    display: inline-block;
+    margin: 0.2cm;
+    font-size: 14px;
+    font-weight: bold;
+}
+.labelt{
+    color: #fff;
+}
+input{
+   padding: 4px;
+   margin: 5px;
+   font-size: 14px; 
+   border-radius: 10px;
+   border: 1px solid #f9f9f9;
+   width:auto;
+}
+
+input#submit{
+    margin-top: 7px;
+    color: #808080;
+    font-weight: bold;
+    padding: 4px;
+    background-color:white;
+}
+input#submit:hover{
+    background-color:rgba(98,211,213,1);
+    color: #f9f9f9;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    font-size: 22px;
+}
+
+
+@media (min-aspect-ratio:16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
