@@ -1,0 +1,22 @@
+.mainForm {
+  /* background-color: aqua; */
+  text-align: center;
+  margin: 10px 40px;
+}
+h1.mainForm_title {
+  font-size: 60px;
+  margin: 60px 0 40px 0;
+}
+
+.mainForm_items {
+  list-style: none;
+}
+input.form-control {
+  margin: 0 50%;
+}
+label {
+  padding-left: 40px;
+}
+.btn {
+  margin: 20px 0;
+}
